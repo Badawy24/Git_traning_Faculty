@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Task" content="Make A Table">
+    <title>Task 1</title>
+    <style>
+        div {
+            width: 650px;
+            height: 250px;
+            background-color: #EEE;
+            margin: auto;
+            padding-top: 20px;
+        }
+        
+        table {
+            width: 600px;
+            height: 200px;
+            margin: auto;
+            border: 1px solid #000;
+            border-collapse: collapse;
+            background-color: #FFF;
+        }
+        
+        table th {
+            color: rgb(190, 30, 30);
+            font-size: 26px;
+        }
+        
+        table td {
+            border: 1px solid #000;
+            padding-left: 7px;
+        }
+        
+        table .info {
+            font-weight: bold;
+        }
+        
+        table .yellow {
+            background-color: yellow;
+        }
+        
+        table .red {
+            background-color: red;
+        }
+        
+        table .gainsboro {
+            background-color: gainsboro;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table>
+            <caption>My Grading Table</caption>
+            <thead>
+                <tr>
+                    <th colspan="7">Grading Table</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="info">Homework</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td class="info">Tests</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td colspan="3" rowspan="2" class="yellow"></td>
+                </tr>
+                <tr>
+                    <td class="info">Final Project</td>
+                    <td>300</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="info">Design</td>
+                    <td>100</td>
+                    <td colspan="5" class="red"></td>
+                </tr>
+                <tr>
+                    <td class="info">Particiption</td>
+                    <td>100</td>
+                    <td colspan="5" rowspan="2" class="gainsboro"></td>
+                </tr>
+                <tr>
+                    <td class="info">Total</td>
+                    <td>1 million</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
